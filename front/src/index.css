@@ -1,0 +1,41 @@
+body {
+  font-family: Nunito Sans, sans-serif;
+  color: #f15b67;
+  background-color: #0b0d0f;
+}
+
+p {
+  line-height: 1.6;
+  color: #f15b67;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  border: 2px solid #f15b67;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #f15b67;
+  font-weight: 700;
+  cursor: pointer;
+  display: block;
+  transform-origin: center;
+  transition: transform 220ms cubic-bezier(0.2, 0.9, 0.3, 1),
+    box-shadow 220ms ease, background-color 220ms ease, color 220ms ease;
+  transform: scale(1);
+  max-width: 150px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+.btn:hover {
+  background-color: #f15b67;
+  color: antiquewhite;
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(17, 24, 39, 0.3);
+}

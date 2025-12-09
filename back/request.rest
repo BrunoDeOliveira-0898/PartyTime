@@ -1,0 +1,97 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+
+{
+    "name": "Decoração",
+    "description": "Escolha a decoração para sua festa, e nós a montamos.",
+    "price": 1400,
+    "image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80"
+  }
+  
+###
+
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/691db6b64c92b9227893f55c
+
+###
+DELETE http://localhost:3000/api/services/691db6b64c92b9227893f55c
+
+###
+PUT  http://localhost:3000/api/services/691dbefcf24ec1831cfbce84
+Content-Type: application/json
+
+
+{
+    "name": "Gran TurismoAND SEGA? Photo Mode 2",
+    "description": "who cares, right?",
+    "price": 765,
+    "image": "https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2F6q32f0bkp3651.jpg"
+}
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "My Birthday 2 - Electric Boogaloo",
+    "author": "Bruno",
+    "description": "It's gonna be lit!",
+    "budget": 3000,
+    "image": "http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcTAV7bx06rrGPEQnZEur3Uz77QkTV6ErxdEd95w_cHggd9MD1UfhxKTDE0LKJDPHwbTdrs_7AvrbTN6xQLaatI",
+    "services": [
+        {
+            "id": "691dbefcf24ec1831cfbce84",
+            "name": "Service 1",
+            "description": "who cares, right?",
+            "price": 765,
+            "image": "https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2F6q32f0bkp3651.jpg"
+        },
+        {
+            "id": "691db6b64c92b9227893f55c",
+            "name": "Service 2",
+            "description": "who cares, right?",
+            "price": 450,
+            "image": "https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2F6q32f0bkp3651.jpg"
+        }
+    ]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/69245551d0ae86c812929ae6
+
+###
+DELETE http://localhost:3000/api/parties/69245551d0ae86c812929ae6
+
+###
+PUT http://localhost:3000/api/parties/692455f8d0ae86c812929ae8
+Content-Type: application/json
+
+{
+    "title": "My Birthday 3 - Electric Boogaloo",
+    "author": "Bruno",
+    "description": "It's gonna be lit!",
+    "budget": 9000,
+    "image": "http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcTAV7bx06rrGPEQnZEur3Uz77QkTV6ErxdEd95w_cHggd9MD1UfhxKTDE0LKJDPHwbTdrs_7AvrbTN6xQLaatI",
+    "services": [
+        {
+            "id": "691dbefcf24ec1831cfbce84",
+            "name": "Service 1",
+            "description": "who cares, right?",
+            "price": 765,
+            "image": "https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2F6q32f0bkp3651.jpg"
+        },
+        {
+            "id": "691db6b64c92b9227893f55c",
+            "name": "Service 2",
+            "description": "who cares, right?",
+            "price": 450,
+            "image": "https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2F6q32f0bkp3651.jpg"
+        }
+    ]
+}

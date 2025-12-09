@@ -1,0 +1,150 @@
+* {
+  color: #f15b67;
+  font-family: Nunito Sans, sans-serif;
+}
+
+.form-page label {
+  width: 100%;
+  color: antiquewhite;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-page form {
+  background-color: #1e2228;
+  border-radius: 12px;
+  border: 1px solid #1e2228;
+  display: flex;
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 800px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 220ms ease, box-shadow 220ms ease;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.form-page form:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.form-page h2,
+.form-page p {
+  margin-top: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form-page input,
+label {
+  border-radius: 8px;
+  background-color: #1e2228;
+  text-decoration: none;
+  gap: 1.5rem;
+  margin: 0 2px 2px;
+}
+
+.form-page textarea {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: #1e2228;
+  border: 1px solid #f15b67;
+}
+
+.form-page input::placeholder {
+  color: antiquewhite;
+}
+
+.form-page .btn {
+  padding: 0.6rem 1.2rem;
+  border: 2px solid #f15b67;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #f15b67;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-block;
+  transform-origin: center;
+  transition: transform 220ms cubic-bezier(0.2, 0.9, 0.3, 1),
+    box-shadow 220ms ease, background-color 220ms ease, color 220ms ease;
+  transform: scale(1);
+  max-width: 150px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+.form-page .btn:hover {
+  background-color: #f15b67;
+  color: antiquewhite;
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(17, 24, 39, 0.3);
+}
+
+.form-page .sevices-container {
+  padding: 0;
+}
+
+.sevices-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0 2rem;
+}
+
+.sevices-container .service {
+  max-width: 24%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.form-page .serivce {
+  padding: 1.5rem;
+  max-width: 29%;
+  text-align: center;
+}
+
+.form-page .serivce p {
+  margin-bottom: 0;
+}
+
+.form-page .service img {
+  margin-top: 2rem;
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(17, 24, 39, 0.3);
+}
+.form-page .service-name {
+  font-weight: bold;
+}
+
+.form-page .service-price {
+  font-weight: bolder;
+  background-color: #f15b67;
+  color: antiquewhite;
+  padding: 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(17, 24, 39, 0.3);
+  margin-top: 0;
+}
+
+.form-page .description {
+  font-weight: 500;
+  font-style: oblique;
+  color: antiquewhite;
+}
+
+.form-page .checkbox-container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
